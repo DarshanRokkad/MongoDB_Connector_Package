@@ -1,9 +1,9 @@
-pymongo
-pymongo[srv]
 dnspython
+ensure
 pandas
 numpy
-ensure
 pytest
+pymongo
+pymongo[srv]
 
 -e .
