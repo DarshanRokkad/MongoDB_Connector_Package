@@ -16,7 +16,7 @@ def get_requirements(file_name:str)->List:
     return requirements
 
 PACKAGE_NAME = 'mongodb_automation'
-VERSION = '0.0.1'
+VERSION = "0.0.1"
 AUTHOR_USER_NAME = 'DarshanRM'
 AUTHOR_EMAIL = 'darshanrokkad2003@gmail.com'
 GITHUB_REPO_URL = 'https://github.com/DarshanRokkad/MongoDB_Connector_Package'
@@ -32,12 +32,12 @@ setup(
     long_description_content_type = 'text/markdown',
 
     url = GITHUB_REPO_URL,
-
     project_urls = {
         'Bug Tracker' : f'{GITHUB_REPO_URL}/issues'
     },
-    project_dir = {'' : 'src'},
 
+    package_dir = {'' : 'src'},
     packages = find_packages(where = 'src'),
-    install_requires = get_requirements('requirements_dev.txt')
+    
+    install_requires = get_requirements('requirements-dev.txt')
 )
