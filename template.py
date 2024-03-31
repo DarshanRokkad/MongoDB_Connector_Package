@@ -26,7 +26,8 @@ list_of_files = [
    "pyproject.toml",
    "tox.ini",
    
-   "notebooks/experiments.ipynb" 
+   "notebooks/experiments.ipynb",
+   "README.md"
 ]
 
 for filepath in list_of_files:
