@@ -2,6 +2,10 @@
 requires = ['setuptools>=42.0', "wheel"]
 build-backend = "setuptools.build_meta"
 
+[tool.poetry]
+name = "darshan_mongodb_automation"  
+version = "0.0.41"
+
 [tool.pytest.ini_options]
 testpaths = [
     "tests"

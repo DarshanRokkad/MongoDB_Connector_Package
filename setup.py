@@ -7,7 +7,7 @@ def get_long_description(file_name:str)->str:
     return long_description
 
 HYPEN_E_DOT = '-e .'
-def get_requirements(file_name:str)->List:
+def get_requirements(file_name:str):
     ''' returs the requirements project development environment '''
     with open(file_name, 'r') as file_obj:
         requirements = [requirement.replace('\n', '') for requirement in file_obj.readlines()]
@@ -15,8 +15,8 @@ def get_requirements(file_name:str)->List:
         requirements.remove(HYPEN_E_DOT)
     return requirements
 
-PACKAGE_NAME = 'mongodb_automation'
-VERSION = "0.0.2"
+PACKAGE_NAME = 'darshan_mongodb_automation'
+VERSION = "0.0.41"
 AUTHOR_USER_NAME = 'DarshanRM'
 AUTHOR_EMAIL = 'darshanrokkad2003@gmail.com'
 GITHUB_REPO_URL = 'https://github.com/DarshanRokkad/MongoDB_Connector_Package'
