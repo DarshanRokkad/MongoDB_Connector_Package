@@ -1,7 +1,7 @@
 import os
 from pathlib import Path
 
-package_name = "mongodb_connect_automation"
+package_name = "mongodb_automation"
 
 list_of_files = [
    ".github/workflows/ci.yaml",
