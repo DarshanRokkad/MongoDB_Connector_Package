@@ -16,7 +16,7 @@ def get_requirements(file_name:str)->List:
     return requirements
 
 PACKAGE_NAME = 'mongodb_automation'
-VERSION = "0.0.1"
+VERSION = "0.0.2"
 AUTHOR_USER_NAME = 'DarshanRM'
 AUTHOR_EMAIL = 'darshanrokkad2003@gmail.com'
 GITHUB_REPO_URL = 'https://github.com/DarshanRokkad/MongoDB_Connector_Package'
