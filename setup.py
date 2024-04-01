@@ -7,7 +7,7 @@ def get_long_description(file_name:str)->str:
     return long_description
 
 HYPEN_E_DOT = '-e .'
-def get_requirements(file_name:str):
+def get_requirements(file_name:str) -> List[str]:
     ''' returs the requirements project development environment '''
     with open(file_name, 'r') as file_obj:
         requirements = [requirement.replace('\n', '') for requirement in file_obj.readlines()]
@@ -39,6 +39,5 @@ setup(
     package_dir = {'' : 'src'},
     packages = find_packages(where = 'src'),
     
-    # install_requires = get_requirements('requirements_dev.txt')
-    install_requires = ['pymongo', 'pymongo[srv]', 'dnspython', 'pandas', 'numpy', 'ensure', 'pytest', 'tox', 'black', 'flake8', 'mypy']
+    install_requires = get_requirements('requirements_dev.txt')
 )
